@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 import { useAppDispatch, useAppSelector } from '../state/hooks';
 import { addAnimal, AnimalState } from '../state/reducers/animalSlice';
 import './Form.scss';
@@ -119,7 +120,7 @@ const Form = () => {
                 {animalSpecies.map((item) => (
                   <option
                     value={item}
-                    key={Math.random()}
+                    key={uuidv4()}
                   >
                     {item}
                   </option>

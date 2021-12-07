@@ -1,4 +1,5 @@
 import React from 'react';
+import { v4 as uuidv4 } from 'uuid';
 import { useAppDispatch, useAppSelector } from '../state/hooks';
 import './Navigation.scss';
 import { setFilterValue } from '../state/reducers/filterSlice';
@@ -28,6 +29,7 @@ const Navigation = () => {
       )}
       {animalSpecies.map((item) => (
         <div
+          key={uuidv4()}
           className="navigation-item"
           onClick={() => {
             dispatch(setFilterValue(item));
