@@ -1,0 +1,23 @@
+.navigation--container {
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.navigation-item {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid burlywood;
+
+  &:hover {
+    color: #04594c;
+    border-color: #04594c;
+    cursor: pointer;
+  }
+
+  &:active {
+    color: #BBBBBB;
+    border-color: #BBBBBB;
+  }
+}

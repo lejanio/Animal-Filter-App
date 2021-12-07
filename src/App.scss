@@ -1,5 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+.no-animals-message--container {
+  display: grid;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+}
+
 .App {
-  text-align: center;
+  //'Roboto', sans-serif;
+  font-family: fantasy;
+  width: 70%;
+  max-width: 1000px;
+  margin: 1.5rem auto;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  justify-content: right;
+
 }
 
 .App-logo {

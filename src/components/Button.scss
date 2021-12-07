@@ -1,0 +1,25 @@
+.button {
+  display:inline-block;
+  padding:0.5em 3em;
+  border:0.16em solid #000000;
+  margin:0 0.3em 0.3em 0;
+  text-decoration:none;
+  text-transform:uppercase;
+  font-family:'Roboto',sans-serif;
+  font-weight:400;
+  color:#000000;
+  text-align:center;
+  transition: all 0.15s;
+
+  &:hover {
+    color: #04594c;
+    border-color: #04594c;
+    cursor: pointer;
+  }
+
+  &:active {
+    color:#BBBBBB;
+    border-color:#BBBBBB;
+  }
+
+}
