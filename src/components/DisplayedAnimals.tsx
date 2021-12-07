@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { v4 as uuidv4 } from 'uuid';
 import { useAppDispatch, useAppSelector } from '../state/hooks';
 import logo from '../assets/animal-logo.png';
 import AnimalCard from './AnimalCard';
@@ -21,7 +20,7 @@ const DisplayedAnimals = () => {
           : (animals))
           .map((item) => (
             <div
-              key={uuidv4()}
+              key={Math.random()}
             >
               <AnimalCard
                 animalNameProp={item.name[language]}
