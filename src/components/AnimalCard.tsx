@@ -11,12 +11,15 @@ type AnimalCardProps = {
 const AnimalCard:FC<AnimalCardProps> = ({ animalNameProp, animalImageProp, animalSpeciesProp }) => (
   <div className="animal-card">
     <div className="animal-card--item">
+      <img src={animalImageProp} alt={animalNameProp} height="200px" style={{ borderRadius: '5px' }} />
+    </div>
+    <div
+      className="animal-card--item"
+      style={{ fontSize: '1.25rem', fontStyle: 'italic' }}
+    >
       Name:
       {' '}
       {animalNameProp}
-    </div>
-    <div>
-      <img src={animalImageProp} alt={animalNameProp} height="200px" style={{ borderRadius: '5px' }} />
     </div>
     <div className="animal-card--item">
       Species:

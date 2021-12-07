@@ -13,7 +13,10 @@ const Navigation = () => {
   const dispatch = useAppDispatch();
 
   return (
+
     <div className="navigation--container">
+      {animalSpecies.length > 0
+      && (
       <div
         className="navigation-item"
         onClick={() => {
@@ -22,6 +25,7 @@ const Navigation = () => {
       >
         All
       </div>
+      )}
       {animalSpecies.map((item) => (
         <div
           className="navigation-item"

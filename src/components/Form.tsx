@@ -36,6 +36,7 @@ const Form = () => {
       console.log('formAnimal1', formAnimal);
       dispatch(addAnimal({ name: formAnimal.name, species: formAnimal.species, imgSrc: formAnimal.imgSrc }));
       setFormAnimal(initialFormState);
+      dispatch(changeModalVisibility(false));
     }
   };
 
@@ -129,7 +130,6 @@ const Form = () => {
         <Button
           onClick={() => {
             addAnimalHandler();
-            dispatch(changeModalVisibility(false));
           }}
         >
           Add animal
