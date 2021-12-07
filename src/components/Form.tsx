@@ -3,6 +3,7 @@ import { useAppDispatch, useAppSelector } from '../state/hooks';
 import { addAnimal, AnimalState } from '../state/reducers/animalSlice';
 import './Form.scss';
 import Button from './Button';
+import { changeModalVisibility } from '../state/reducers/modalSlice';
 
 const Form = () => {
   const animals = useAppSelector((reduxState) => reduxState.animals);
@@ -128,6 +129,7 @@ const Form = () => {
         <Button
           onClick={() => {
             addAnimalHandler();
+            dispatch(changeModalVisibility(false));
           }}
         >
           Add animal

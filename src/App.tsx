@@ -10,7 +10,6 @@ import Button from './components/Button';
 import Navigation from './components/Navigation';
 
 const App = () => {
-  // const [formIsOpen, setFormIsOpen] = useState(false);
   const animals = useAppSelector((reduxState) => reduxState.animals);
   const modalIsOpen = useAppSelector((reduxState) => reduxState.modal);
 
